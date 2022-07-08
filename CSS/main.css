@@ -1,0 +1,200 @@
+/* SECCION DE HEADER */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer; /*cuando pase el cursor cambia a una mano */
+}
+
+header{
+    /*background-color: aquamarine;*/
+    padding: 4px 0;
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    /*background-color: blue;*/
+    display: flex; /*se anuncia usar el displey flex para cambiar de posicionamiento de contenido*/
+    justify-content: flex-end; /*justificar todo el conenido*/
+}
+
+header nav .nav-right-section{
+    /*background-color: blueviolet;*/
+    width: 250px;
+    height: auto;
+    display: flex; /*para posicionar*/
+    list-style: none; /*quitar los estilos osea los puntos de decoracion quee tiene la lista*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px; /*separacion 100 pixeles a la derecha*/
+    color: #000;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://img.icons8.com/ios-glyphs/344/circled-menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+
+
+/* SECCION DE MAIN */
+
+main{
+    /*background-color: darkcyan;*/
+    text-align: center;
+    margin-top: 200px;
+}
+
+main .main-logo{
+    /*background-color: darkmagenta;*/
+    width: 275px;
+    margin: 0 auto; /*margin 0 es en largo 0 y en ancho al auto quiere decir que va centrado*/
+}
+
+main .main-logo img{
+    width: 100%;
+}
+
+/* SECCION DE MAIN INPUT */
+
+main .main-input{
+    /*background-color: burlywood;*/
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .main-input-conteiner{
+    /*background-color: chartreuse;*/
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid rgba(203, 204, 208, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    /*background-color: crimson;*/
+    width: 86%;
+    height: 42px;
+    border: none;
+    outline: none; /*se quita el borde azul*/
+}
+
+main .main-input-conteiner:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+/* SECCION DE MAIN INPUT - ICONOS*/
+
+main .main-input .search-icon,
+.micro-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+main .main-input .search-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+}
+main .main-input .micro-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png");
+  cursor: pointer;
+}
+
+/* SECCION DE MAIN BOTONES */
+
+main .main-bottons{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .main-bottons div{
+    display: inline-block;
+}
+
+main .main-bottons button{
+    height: 40px;
+    background-color: rgb(233, 232, 232);
+    border: none;
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+    border-radius: 8px;
+    padding: 0 30px;
+    margin: 15px;
+}
+
+main .main-bottons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+ /* SECCION FOOTER*/
+
+footer{
+
+    width: 100%;
+    height: 50px;
+    
+    position: absolute; /*con esto se asegura que siempre quede abajo esta seccion footer*/
+    bottom: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+
+
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none; /*resetear el estilo*/
+    
+    display: flex; /*posicionar el contenido horizontalmente*/
+    padding-left: 0;
+}
+
+footer li a{
+    padding: 15px;
+    color: rgb(82, 82, 82);
+}
+
+footer .footer-left{
+    
+    padding: 0 20px;
+    justify-self: left;
+}
+
+footer .footer-right{
+    padding: 0 20px;
+    justify-self: right;
+}
